@@ -78,7 +78,7 @@ public final class Token
         CLOSE("\\)", false),
         ID("[a-z]+", true),
         NUMBER("[-]?\\d+", true),
-        BINARYOP("[+-*/]", true),
+        BINARYOP("[\\+\\-\\*\\/]", true),
         WHITESPACE("\\s+", false);
 
         private final String pattern;

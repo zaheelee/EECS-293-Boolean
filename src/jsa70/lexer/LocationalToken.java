@@ -17,6 +17,16 @@ public final class LocationalToken
         return TOKEN;
     }
 
+    public Token.Type getType()
+    {
+        return TOKEN.getType();
+    }
+
+    public String getData()
+    {
+        return TOKEN.getData();
+    }
+
     public Integer getLocation()
     {
         return LOCATION;

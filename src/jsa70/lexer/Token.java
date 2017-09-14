@@ -13,7 +13,7 @@ public class Token
     private final Optional<String> DATA;
 
     //TODO consider renaming
-    private static Map<Builder, Token> map;
+    private static Map<Builder, Token> m_allTokens;
 
     //TODO
     //that returns a token of the given type and with the given ancillary data.

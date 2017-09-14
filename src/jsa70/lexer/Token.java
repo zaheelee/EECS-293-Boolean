@@ -1,18 +1,20 @@
 package jsa70.lexer;
 
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 public final class Token
 {
-
-    //TODO reorder all of these things so they are in some kind of logical place
-
-
     private final Type TYPE;
     private final Optional<String> DATA;
 
-    private static Map<Builder, Token> m_allTokens;
+    private static Map<Builder, Token> m_allTokens = new HashMap<>();
+
+
+    private Token(Type type, Optional<String> data)
+    {
+        this.TYPE = type;
+        this.DATA = data;
+    }
 
     public static Token of(Type type, String data)
     {
@@ -37,12 +39,6 @@ public final class Token
         m_allTokens.put(builder, token);
 
         return token;
-    }
-
-    private Token(Type type, Optional<String> data)
-    {
-        this.TYPE = type;
-        this.DATA = data;
     }
 
     public Type getType()
@@ -72,43 +68,6 @@ public final class Token
         return false;
     }
 
-    @Override
-    public boolean equals(Object o)
-    {
-        if (this == o)
-        {
-            return true;
-        }
-        if (o == null || getClass() != o.getClass())
-        {
-            return false;
-        }
-
-        Token token = (Token) o;
-
-        if (TYPE != token.TYPE)
-        {
-            return false;
-        }
-        return DATA != null ? DATA.equals(token.DATA) : token.DATA == null;
-    }
-
-    @Override
-    public int hashCode()
-    {
-        int result = TYPE.hashCode();
-        result = 31 * result + (DATA != null ? DATA.hashCode() : 0);
-        return result;
-    }
-
-    @Override
-    public String toString()
-    {
-        return "Token{" +
-                "TYPE=" + TYPE +
-                ", DATA=" + DATA +
-                '}';
-    }
 
     public enum Type
     {
@@ -187,5 +146,43 @@ public final class Token
             result = 31 * result + (DATA != null ? DATA.hashCode() : 0);
             return result;
         }
+    }
+
+    @Override
+    public boolean equals(Object o)
+    {
+        if (this == o)
+        {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass())
+        {
+            return false;
+        }
+
+        Token token = (Token) o;
+
+        if (TYPE != token.TYPE)
+        {
+            return false;
+        }
+        return DATA != null ? DATA.equals(token.DATA) : token.DATA == null;
+    }
+
+    @Override
+    public int hashCode()
+    {
+        int result = TYPE.hashCode();
+        result = 31 * result + (DATA != null ? DATA.hashCode() : 0);
+        return result;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "Token{" +
+                "TYPE=" + TYPE +
+                ", DATA=" + DATA +
+                '}';
     }
 }

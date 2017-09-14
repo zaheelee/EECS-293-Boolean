@@ -3,7 +3,7 @@ package jsa70.lexer;
 import java.util.Map;
 import java.util.Optional;
 
-public class Token
+public final class Token
 {
 
     //TODO reorder all of these things so they are in some kind of logical place
@@ -12,18 +12,31 @@ public class Token
     private final Type TYPE;
     private final Optional<String> DATA;
 
-    //TODO consider renaming
     private static Map<Builder, Token> m_allTokens;
 
-    //TODO
-    //that returns a token of the given type and with the given ancillary data.
-    //If a token already exists with the same type and data, this method returns
-    //the previously created token. Otherwise, the instantiates a new token.
-    //Furthermore, if the token type does not support ancillary data,
-    //the second argument is silently ignored.
     public static Token of(Type type, String data)
     {
-        return null;
+        Optional<String> opData;
+        if(hasTypeData(type))
+        {
+            opData = Optional.of(data);
+        }
+        else
+        {
+            opData = Optional.empty();
+        }
+
+        Builder builder = new Builder(type, opData);
+
+        if(m_allTokens.containsKey(builder))
+        {
+            return m_allTokens.get(builder);
+        }
+
+        Token token = builder.build();
+        m_allTokens.put(builder, token);
+
+        return token;
     }
 
     private Token(Type type, Optional<String> data)
@@ -47,11 +60,67 @@ public class Token
         return null;
     }
 
+    private static boolean hasTypeData(Type type)
+    {
+        for(Type t : Type.values())
+        {
+            if(type.equals(t))
+            {
+                return t.hasData();
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean equals(Object o)
+    {
+        if (this == o)
+        {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass())
+        {
+            return false;
+        }
+
+        Token token = (Token) o;
+
+        if (TYPE != token.TYPE)
+        {
+            return false;
+        }
+        return DATA != null ? DATA.equals(token.DATA) : token.DATA == null;
+    }
+
+    @Override
+    public int hashCode()
+    {
+        int result = TYPE.hashCode();
+        result = 31 * result + (DATA != null ? DATA.hashCode() : 0);
+        return result;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "Token{" +
+                "TYPE=" + TYPE +
+                ", DATA=" + DATA +
+                '}';
+    }
+
     public enum Type
     {
-        //TODO CHANGE LATER/ADD THE REST OF THE ENUM VALUES
-        //TODO look up regexes and see what the assignment meant by this
-        NOT("not", false);
+        NOT("(not)", false),
+        AND("(and)", false),
+        OR("(or)", false),
+        OPEN("\\(", false),
+        CLOSE("\\)", false),
+        ID("[a-z]+", true),
+        NUMBER("[-]?\\d+", true),
+        BINARYOP("[+-*/]", true),
+        WHITESPACE("\\s+", false);
 
         private final String pattern;
         private final Boolean hasData;
@@ -60,6 +129,16 @@ public class Token
         {
             this.pattern = pattern;
             this.hasData = hasData;
+        }
+
+        public String getPattern()
+        {
+            return pattern;
+        }
+
+        public Boolean hasData()
+        {
+            return hasData;
         }
     }
 
@@ -71,7 +150,6 @@ public class Token
 
         Builder(Type type, Optional<String> data)
         {
-            //TODO do I want to check if the type is null? can an enum be null?
             this.TYPE = type;
             this.DATA = data;
         }
@@ -79,6 +157,35 @@ public class Token
         private Token build()
         {
             return new Token(this.TYPE, this.DATA);
+        }
+
+        @Override
+        public boolean equals(Object o)
+        {
+            if (this == o)
+            {
+                return true;
+            }
+            if (o == null || getClass() != o.getClass())
+            {
+                return false;
+            }
+
+            Builder builder = (Builder) o;
+
+            if (TYPE != builder.TYPE)
+            {
+                return false;
+            }
+            return DATA != null ? DATA.equals(builder.DATA) : builder.DATA == null;
+        }
+
+        @Override
+        public int hashCode()
+        {
+            int result = TYPE.hashCode();
+            result = 31 * result + (DATA != null ? DATA.hashCode() : 0);
+            return result;
         }
     }
 }

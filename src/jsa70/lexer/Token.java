@@ -19,8 +19,8 @@ public class Token
     //that returns a token of the given type and with the given ancillary data.
     //If a token already exists with the same type and data, this method returns
     //the previously created token. Otherwise, the instantiates a new token.
-    // Furthermore, if the token type does not support ancillary data,
-    // the second argument is silently ignored.
+    //Furthermore, if the token type does not support ancillary data,
+    //the second argument is silently ignored.
     public static Token of(Type type, String data)
     {
         return null;

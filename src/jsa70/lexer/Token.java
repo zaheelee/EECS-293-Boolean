@@ -16,6 +16,8 @@ public final class Token
         this.DATA = data;
     }
 
+    //Checks if a Token with specified info exists and returns it.
+    //If it does not exist, the Token is created, then returned.
     public static Token of(Type type, String data)
     {
         Optional<String> opData;
@@ -56,6 +58,7 @@ public final class Token
         return null;
     }
 
+    //Checks if a type is expecting data
     private static boolean hasTypeData(Type type)
     {
         for(Type t : Type.values())

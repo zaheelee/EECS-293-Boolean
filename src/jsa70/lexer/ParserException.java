@@ -7,6 +7,8 @@ public final class ParserException extends Exception
     private final ErrorCode errorCode; //why on earth does this not use all caps?
     private final int location;
 
+    public static final long serialVersionUID = 293L;
+
     ParserException(ErrorCode errorCode)
     {
         this.errorCode = errorCode;
@@ -19,21 +21,21 @@ public final class ParserException extends Exception
         location = token.getLocation();
     }
 
-    //TODO
     public static void verify(Optional<LocationalToken> token)
+            throws ParserException
     {
         if(!token.isPresent())
         {
-            //throw a TOKEN_EXPECTED exception
+            throw new ParserException(ErrorCode.TOKEN_EXPECTED);
         }
     }
 
-    //TODO
     public static void verifyEnd(Optional<LocationalToken> token)
+            throws ParserException
     {
         if(token.isPresent())
         {
-            //throw a TRAILING_INPUT exception
+            throw new ParserException(token.get(), ErrorCode.TRAILING_INPUT);
         }
     }
 
@@ -48,7 +50,6 @@ public final class ParserException extends Exception
         return location;
     }
 
-    //TODO
     public enum ErrorCode
     {
         TOKEN_EXPECTED,

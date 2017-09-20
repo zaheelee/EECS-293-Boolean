@@ -56,20 +56,21 @@ public final class Token
 
     public enum Type
     {
-        NOT("(not)", false),
-        AND("(and)", false),
-        OR("(or)", false),
-        OPEN("\\(", false),
-        CLOSE("\\)", false),
-        ID("[a-z]+", true),
-        NUMBER("[-]?\\d+", true),
-        BINARYOP("[\\+\\-\\*\\/]", true),
-        WHITESPACE("\\s+", false);
+        NOT("(not)", false, false),
+        AND("(and)", false, true),
+        OR("(or)", false, true),
+        OPEN("\\(", false, false),
+        CLOSE("\\)", false, false),
+        ID("[a-z]+", true, false),
+        NUMBER("[-]?\\d+", true, false),
+        BINARYOP("[\\+\\-\\*\\/]", true, false),
+        WHITESPACE("\\s+", false, false);
 
         private final String pattern;
         private final Boolean hasData;
+        private Boolean isComplex;
 
-        Type(String pattern, Boolean hasData)
+        Type(String pattern, Boolean hasData, Boolean isComplex)
         {
             this.pattern = pattern;
             this.hasData = hasData;
@@ -83,6 +84,11 @@ public final class Token
         public Boolean hasData()
         {
             return hasData;
+        }
+
+        public Boolean isComplex()
+        {
+            return isComplex;
         }
     }
 

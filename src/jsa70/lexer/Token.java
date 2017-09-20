@@ -94,12 +94,16 @@ public final class Token
         public static String getGroup()
         {
             StringBuilder output = new StringBuilder();
+            //output.append("(");
             for(Type t : Type.values())
             {
                 output.append('(');
                 output.append(t.getPattern());
                 output.append(')');
+                output.append('|');
             }
+            output.deleteCharAt(output.length() - 1);
+            //output.append(")");
             return output.toString();
         }
     }

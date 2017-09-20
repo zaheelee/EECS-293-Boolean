@@ -1,6 +1,5 @@
 package jsa70.lexer;
 
-import javax.swing.text.html.parser.Parser;
 import java.util.Optional;
 import java.util.Set;
 import java.util.regex.Matcher;
@@ -8,11 +7,9 @@ import java.util.regex.Pattern;
 
 public class Lexer
 {
-    //TODO figure out how to init
-    private final Matcher MATCHER;
+    private final Matcher matcher;
     private final int INPUT_LENGTH;
 
-    //TODO figure out how to init
     private static Pattern tokenPatterns;
 
     private int currentLocation;
@@ -26,13 +23,9 @@ public class Lexer
 
     public Lexer(String input)
     {
-        MATCHER = tokenPatterns.matcher(input);
+        matcher = tokenPatterns.matcher(input);
         INPUT_LENGTH = input.length();
         currentLocation = 0;
-
-        //TODO I don't know where this will go, but eventually I will need to know that the way to get
-        // the value of an enum index I need to use AND.ordinal() (or use a for each loop and call .ordinal()
-        // on the value of the enum)
     }
 
     public boolean hasNext()
@@ -43,20 +36,18 @@ public class Lexer
     public LocationalToken next()
             throws ParserException
     {
-        if(!hasNext())
-        {
-            //TODO either throw some kind of index out of bounds exception, or figure out if you implemented hasNext wrong
-        }
-
-        MATCHER.find(currentLocation);
         LocationalToken locationalToken = null;
-        // The 0th group refers to all groups
-        for(int i = 1; i <= MATCHER.groupCount(); i++)
+        if(!matcher.find(currentLocation))
         {
-            if(MATCHER.group(i) != null)
+            ParserException.verify(Optional.ofNullable(locationalToken));
+        }
+        // The 0th group refers to all groups
+        for(int i = 1; i <= matcher.groupCount(); i++)
+        {
+            if(matcher.group(i) != null)
             {
                 locationalToken = getLocationalTokenFromGroup(i);
-                currentLocation = MATCHER.end(i);
+                currentLocation = matcher.end(i);
                 break;
             }
         }
@@ -73,7 +64,7 @@ public class Lexer
 
     private LocationalToken getLocationalTokenFromGroup(int group)
     {
-        Token token = Token.of(Token.Type.values()[group - 1], MATCHER.group(group));
+        Token token = Token.of(Token.Type.values()[group - 1], matcher.group(group));
         return new LocationalToken(token, currentLocation);
     }
 }

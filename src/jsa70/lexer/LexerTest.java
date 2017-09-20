@@ -7,18 +7,28 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class LexerTest
 {
-    //private String testStr;
+    private String testStr;
+    private Lexer lex;
 
     @Test
     void hasNext()
     {
+        try
+        {
+            lex.next();
+            assertTrue(lex.hasNext());
+        }
+        catch (Exception e)
+        {
+            System.out.println("Breaking Exception is:");
+            System.out.println(e.toString());
+            assertTrue(false);
+        }
     }
 
     @Test
     void next_getFirstToken()
     {
-        String testStr = "one and two or (three not four) 5 + six - 7 * eight / 9   ten";
-        Lexer lex = new Lexer(testStr);
         LocationalToken lt = null;
         try
         {
@@ -36,8 +46,6 @@ class LexerTest
     @Test
     void next_getAllTokens()
     {
-        String testStr = "one and two or(three not four) 5+six- 7*eight/9   ten";
-        Lexer lex = new Lexer(testStr);
         LocationalToken lt = null;
         try
         {
@@ -179,6 +187,7 @@ class LexerTest
     @BeforeEach
     void setUp()
     {
-        //testStr = "one and two or (three not four) 5 + six - 7 * eight / 9   ten";
+        testStr = "one and two or(three not four) 5+six- 7*eight/9   ten";
+        lex = new Lexer(testStr);
     }
 }

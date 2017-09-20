@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31adabb1-b21a-4a63-ab34-3bd5c10fe1bf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jsa70/lexer/Lexer.java" afterPath="$PROJECT_DIR$/src/jsa70/lexer/Lexer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jsa70/lexer/ParserException.java" afterPath="$PROJECT_DIR$/src/jsa70/lexer/ParserException.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParserException.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ParserException.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/ParserException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+            <state relative-caret-position="248">
+              <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
               <folding>
                 <element signature="e#1001#1002#0" expanded="true" />
                 <element signature="e#1034#1035#0" expanded="true" />
@@ -53,7 +52,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Lexer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Lexer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Lexer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
@@ -146,8 +145,8 @@
         <option value="$PROJECT_DIR$/src/jsa70/lexer/README" />
         <option value="$PROJECT_DIR$/src/jsa70/lexer/LocationalToken.java" />
         <option value="$PROJECT_DIR$/src/jsa70/lexer/Token.java" />
-        <option value="$PROJECT_DIR$/src/jsa70/lexer/ParserException.java" />
         <option value="$PROJECT_DIR$/src/jsa70/lexer/Lexer.java" />
+        <option value="$PROJECT_DIR$/src/jsa70/lexer/ParserException.java" />
       </list>
     </option>
   </component>
@@ -519,19 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/ParserException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-          <folding>
-            <element signature="e#1001#1002#0" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1070#1071#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Lexer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -542,6 +528,19 @@
             <element signature="e#650#651#0" expanded="true" />
             <element signature="e#702#703#0" expanded="true" />
             <element signature="e#729#730#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/ParserException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+          <folding>
+            <element signature="e#1001#1002#0" expanded="true" />
+            <element signature="e#1034#1035#0" expanded="true" />
+            <element signature="e#1070#1071#0" expanded="true" />
+            <element signature="e#1101#1102#0" expanded="true" />
           </folding>
         </state>
       </provider>

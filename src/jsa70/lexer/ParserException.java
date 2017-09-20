@@ -50,6 +50,15 @@ public final class ParserException extends Exception
         return LOCATION;
     }
 
+    @Override
+    public String toString()
+    {
+        return "ParserException{" +
+                "ERROR_CODE=" + ERROR_CODE +
+                ", LOCATION=" + LOCATION +
+                '}';
+    }
+
     public enum ErrorCode
     {
         TOKEN_EXPECTED,

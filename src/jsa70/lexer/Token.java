@@ -7,7 +7,7 @@ public final class Token
     private final Type TYPE;
     private final Optional<String> DATA;
 
-    private static Map<Builder, Token> m_allTokens = new HashMap<>();
+    private static Map<Builder, Token> allTokens = new HashMap<>();
 
 
     private Token(Type type, Optional<String> data)
@@ -20,25 +20,25 @@ public final class Token
     //If it does not exist, the Token is created, then returned.
     public static Token of(Type type, String data)
     {
-        Optional<String> opData;
-        if(hasTypeData(type))
+        Optional<String> optionalData;
+        if(type.hasData())
         {
-            opData = Optional.of(data);
+            optionalData = Optional.of(data);
         }
         else
         {
-            opData = Optional.empty();
+            optionalData = Optional.empty();
         }
 
-        Builder builder = new Builder(type, opData);
+        Builder builder = new Builder(type, optionalData);
 
-        if(m_allTokens.containsKey(builder))
+        if(allTokens.containsKey(builder))
         {
-            return m_allTokens.get(builder);
+            return allTokens.get(builder);
         }
 
         Token token = builder.build();
-        m_allTokens.put(builder, token);
+        allTokens.put(builder, token);
 
         return token;
     }
@@ -48,27 +48,9 @@ public final class Token
         return TYPE;
     }
 
-    public String getData()
+    public Optional<String> getData()
     {
-        if(DATA.isPresent())
-        {
-            return DATA.get();
-        }
-
-        return null;
-    }
-
-    //Checks if a type is expecting data
-    private static boolean hasTypeData(Type type)
-    {
-        for(Type t : Type.values())
-        {
-            if(type.equals(t))
-            {
-                return t.hasData();
-            }
-        }
-        return false;
+        return DATA;
     }
 
 

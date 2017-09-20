@@ -1,5 +1,7 @@
 package jsa70.lexer;
 
+import java.util.Optional;
+
 public final class LocationalToken
 {
 
@@ -22,7 +24,7 @@ public final class LocationalToken
         return TOKEN.getType();
     }
 
-    public String getData()
+    public Optional<String> getData()
     {
         return TOKEN.getData();
     }

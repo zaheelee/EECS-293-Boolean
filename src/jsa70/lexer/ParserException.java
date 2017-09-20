@@ -4,21 +4,21 @@ import java.util.Optional;
 
 public final class ParserException extends Exception
 {
-    private final ErrorCode errorCode; //why on earth does this not use all caps?
-    private final int location;
+    private final ErrorCode ERROR_CODE;
+    private final int LOCATION;
 
     public static final long serialVersionUID = 293L;
 
     ParserException(ErrorCode errorCode)
     {
-        this.errorCode = errorCode;
-        location = -1;
+        ERROR_CODE = errorCode;
+        LOCATION = -1;
     }
 
     ParserException(LocationalToken token, ErrorCode errorCode)
     {
-        this.errorCode = errorCode;
-        location = token.getLocation();
+        ERROR_CODE = errorCode;
+        LOCATION = token.getLocation();
     }
 
     public static void verify(Optional<LocationalToken> token)
@@ -42,12 +42,12 @@ public final class ParserException extends Exception
 
     public ErrorCode getErrorCode()
     {
-        return errorCode;
+        return ERROR_CODE;
     }
 
     public int getLocation()
     {
-        return location;
+        return LOCATION;
     }
 
     public enum ErrorCode

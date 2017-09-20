@@ -13,11 +13,19 @@ public class Lexer
     //TODO figure out how to init
     private static Pattern tokenPatterns;
 
+    static
+    {
+        //TODO
+        tokenPatterns = new Pattern();
+    }
+
 
     //TODO
     public Lexer(String input)
     {
-
+        //TODO fix this, I don't think it should use input like this
+        //maybe you do?
+        MATCHER = tokenPatterns.matcher(input);
     }
 
     //TODO

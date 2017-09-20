@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31adabb1-b21a-4a63-ab34-3bd5c10fe1bf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jsa70/lexer/LocationalToken.java" afterPath="$PROJECT_DIR$/src/jsa70/lexer/LocationalToken.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jsa70/lexer/Token.java" afterPath="$PROJECT_DIR$/src/jsa70/lexer/Token.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jsa70/lexer/ParserException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,10 +15,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Token.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Token.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Token.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="641">
+            <state relative-caret-position="57">
               <caret line="52" column="20" lean-forward="false" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
               <folding>
                 <element signature="e#1033#1034#0" expanded="true" />
@@ -31,6 +31,21 @@
                 <element signature="e#1825#1826#0" expanded="true" />
                 <element signature="e#2122#2123#0" expanded="true" />
                 <element signature="e#2184#2185#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParserException.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/ParserException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="46" lean-forward="false" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+              <folding>
+                <element signature="e#899#900#0" expanded="true" />
+                <element signature="e#931#932#0" expanded="true" />
+                <element signature="e#967#968#0" expanded="true" />
+                <element signature="e#998#999#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,8 +107,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -113,6 +128,7 @@
         <option value="$PROJECT_DIR$/src/jsa70/lexer/README" />
         <option value="$PROJECT_DIR$/src/jsa70/lexer/Token.java" />
         <option value="$PROJECT_DIR$/src/jsa70/lexer/LocationalToken.java" />
+        <option value="$PROJECT_DIR$/src/jsa70/lexer/ParserException.java" />
       </list>
     </option>
   </component>
@@ -465,7 +481,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Token.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
+        <state relative-caret-position="57">
           <caret line="52" column="20" lean-forward="false" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
           <folding>
             <element signature="e#1033#1034#0" expanded="true" />
@@ -478,6 +494,19 @@
             <element signature="e#1825#1826#0" expanded="true" />
             <element signature="e#2122#2123#0" expanded="true" />
             <element signature="e#2184#2185#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/ParserException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="46" lean-forward="false" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+          <folding>
+            <element signature="e#899#900#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
+            <element signature="e#998#999#0" expanded="true" />
           </folding>
         </state>
       </provider>

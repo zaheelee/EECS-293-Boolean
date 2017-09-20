@@ -56,9 +56,9 @@ public final class Token
 
     public enum Type
     {
-        NOT("(not)", false, false),
-        AND("(and)", false, true),
-        OR("(or)", false, true),
+        NOT("not", false, false),
+        AND("and", false, true),
+        OR("or", false, true),
         OPEN("\\(", false, false),
         CLOSE("\\)", false, false),
         ID("[a-z]+", true, false),
@@ -89,6 +89,18 @@ public final class Token
         public Boolean isComplex()
         {
             return isComplex;
+        }
+
+        public static String getGroup()
+        {
+            StringBuilder output = new StringBuilder();
+            for(Type t : Type.values())
+            {
+                output.append('(');
+                output.append(t.getPattern());
+                output.append(')');
+            }
+            return output.toString();
         }
     }
 

@@ -3,12 +3,19 @@ package jsa70.lexer;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Optional;
+import java.util.Set;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class LexerTest
 {
     private String testStr;
     private Lexer lex;
+    private Set<Token.Type> validTypes;
+    private Set<Token.Type> invalidTypes;
 
     @Test
     void hasNext()
@@ -180,8 +187,69 @@ class LexerTest
     }
 
     @Test
-    void nextValid()
+    void nextValid_ValidInputs()
     {
+        String validStr = "words and or stuff";
+        Lexer validLex = new Lexer(validStr);
+        try
+        {
+            Optional<LocationalToken> optional = validLex.nextValid(validTypes, invalidTypes);
+            assertTrue(optional.isPresent());
+            assertTrue(optional.get().getType() == Token.Type.ID);
+
+            //whitespace is neither valid nor invalid
+            optional = validLex.nextValid(validTypes, invalidTypes);
+            assertTrue(!optional.isPresent());
+
+            optional = validLex.nextValid(validTypes, invalidTypes);
+            assertTrue(optional.isPresent());
+            assertTrue(optional.get().getType() == Token.Type.AND);
+
+            //whitespace is neither valid nor invalid
+            optional = validLex.nextValid(validTypes, invalidTypes);
+            assertTrue(!optional.isPresent());
+
+            optional = validLex.nextValid(validTypes, invalidTypes);
+            assertTrue(optional.isPresent());
+            assertTrue(optional.get().getType() == Token.Type.OR);
+
+            //whitespace is neither valid nor invalid
+            optional = validLex.nextValid(validTypes, invalidTypes);
+            assertTrue(!optional.isPresent());
+
+            optional = validLex.nextValid(validTypes, invalidTypes);
+            assertTrue(optional.isPresent());
+            assertTrue(optional.get().getType() == Token.Type.ID);
+        }
+        catch (Exception e)
+        {
+            System.out.println("Breaking Exception is:");
+            System.out.println(e.toString());
+            assertTrue(false);
+        }
+    }
+
+    @Test
+    void nextValid_InvalidInputs()
+    {
+        String invalidStr = "words 5 and (or) stuff";
+        Lexer invalidLex = new Lexer(invalidStr);
+        try
+        {
+            Optional<LocationalToken> optional = invalidLex.nextValid(validTypes, invalidTypes);
+            assertTrue(optional.isPresent());
+            assertTrue(optional.get().getType() == Token.Type.ID);
+
+            //whitespace is neither valid nor invalid
+            optional = invalidLex.nextValid(validTypes, invalidTypes);
+            assertTrue(!optional.isPresent());
+
+            optional = invalidLex.nextValid(validTypes, invalidTypes);
+        }
+        catch (ParserException e)
+        {
+            assertTrue(e.getErrorCode().equals(ParserException.ErrorCode.INVALID_TOKEN));
+        }
     }
 
     @BeforeEach
@@ -189,5 +257,8 @@ class LexerTest
     {
         testStr = "one and two or(three not four) 5+six- 7*eight/9   ten";
         lex = new Lexer(testStr);
+
+        validTypes = new HashSet<>(Arrays.asList(Token.Type.ID, Token.Type.AND, Token.Type.OR));
+        invalidTypes = new HashSet<>(Arrays.asList(Token.Type.NUMBER, Token.Type.OPEN, Token.Type.CLOSE));
     }
 }

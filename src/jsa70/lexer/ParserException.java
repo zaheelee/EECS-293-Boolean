@@ -30,6 +30,20 @@ public final class ParserException extends Exception
         }
     }
 
+    public final static void verify(Token.Type expectedType, LocationalToken token)
+            throws ParserException
+    {
+        if(!expectedType.equals(token.getType()))
+        {
+            if(expectedType.getErrorCode().isPresent())
+            {
+                throw new ParserException(token, expectedType.getErrorCode().get());
+            }
+            // When no specific error is given, throw a more general one
+            throw new ParserException(token, ErrorCode.INVALID_TOKEN);
+        }
+    }
+
     public static void verifyEnd(Optional<LocationalToken> token)
             throws ParserException
     {
@@ -63,7 +77,11 @@ public final class ParserException extends Exception
     {
         TOKEN_EXPECTED,
         INVALID_TOKEN,
-        TRAILING_INPUT;
+        TRAILING_INPUT,
+        AND_EXPECTED,
+        OPEN_EXPECTED,
+        CLOSE_EXPECTED,
+        ID_EXPECTED;
     }
 
 }

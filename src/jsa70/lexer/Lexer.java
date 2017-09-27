@@ -12,7 +12,6 @@ public class Lexer
 
     private static Pattern tokenPatterns;
 
-    private int currentLocation;
 
 
     static
@@ -25,22 +24,18 @@ public class Lexer
     {
         MATCHER = tokenPatterns.matcher(input);
         INPUT_LENGTH = input.length();
-        currentLocation = 0;
     }
 
     public boolean hasNext()
     {
-        return currentLocation != INPUT_LENGTH;
+        return MATCHER.find();
     }
 
+    // Apparently this is not supposed to increment, which is listed nowhere in the assignment,
+    // but that is what a TA said so I guess I'll do it.
     public LocationalToken next()
             throws ParserException
     {
-        if(!MATCHER.find(currentLocation))
-        {
-            throw new ParserException(ParserException.ErrorCode.TOKEN_EXPECTED);
-        }
-
         LocationalToken locationalToken = null;
 
         // The 0th group refers to all groups
@@ -49,7 +44,6 @@ public class Lexer
             if(MATCHER.group(i) != null)
             {
                 locationalToken = getLocationalTokenFromGroup(i);
-                currentLocation = MATCHER.end(i);
                 break;
             }
         }
@@ -60,48 +54,27 @@ public class Lexer
     public Optional<LocationalToken> nextValid(Set<Token.Type> validTypes, Set<Token.Type> invalidTypes)
             throws ParserException
     {
-        if(!MATCHER.find(currentLocation))
-        {
-            throw new ParserException(ParserException.ErrorCode.TOKEN_EXPECTED);
-        }
-
         LocationalToken locationalToken;
-        Token.Type type;
-        int possibleNewLocation = -1;
 
-        // The 0th group refers to all groups
-        for(int i = 1; i <= MATCHER.groupCount(); i++)
+        while(hasNext())
         {
-            if(MATCHER.group(i) != null)
+            locationalToken = next();
+            if(validTypes.contains(locationalToken.getType()))
             {
-                locationalToken = getLocationalTokenFromGroup(i);
-                type = getTypeFromGroupRegex(i);
-
-                if(validTypes.contains(type))
-                {
-                    currentLocation = MATCHER.end(i);
-                    return Optional.of(locationalToken);
-                }
-                else if(invalidTypes.contains(type))
-                {
-                    throw new ParserException(locationalToken, ParserException.ErrorCode.INVALID_TOKEN);
-                }
-                else if(possibleNewLocation < 0)
-                {
-                    possibleNewLocation = MATCHER.end(i);
-                }
+                return Optional.of(locationalToken);
+            }
+            else if(invalidTypes.contains(locationalToken.getType()))
+            {
+                throw new ParserException(locationalToken, ParserException.ErrorCode.INVALID_TOKEN);
             }
         }
-
-        //if no valid tokens are found
-        currentLocation = possibleNewLocation;
         return Optional.empty();
     }
 
     private LocationalToken getLocationalTokenFromGroup(int group)
     {
         Token token = Token.of(getTypeFromGroupRegex(group), MATCHER.group(group));
-        return new LocationalToken(token, currentLocation);
+        return new LocationalToken(token, MATCHER.start(group));
     }
 
     private Token.Type getTypeFromGroupRegex(int group)

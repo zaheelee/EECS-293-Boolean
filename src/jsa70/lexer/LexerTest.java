@@ -22,7 +22,6 @@ class LexerTest
     {
         try
         {
-            lex.next();
             assertTrue(lex.hasNext());
         }
         catch (Exception e)
@@ -39,6 +38,7 @@ class LexerTest
         LocationalToken lt = null;
         try
         {
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.ID);
         }
@@ -57,123 +57,150 @@ class LexerTest
         try
         {
             // "one"
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.ID);
             assertTrue(lt.getData().isPresent() && lt.getData().get().equals("one"));
 
             // " "
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.WHITESPACE);
 
             // "and"
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.AND);
 
             // " "
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.WHITESPACE);
 
             // "two"
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.ID);
             assertTrue(lt.getData().isPresent() && lt.getData().get().equals("two"));
 
             // " "
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.WHITESPACE);
 
             // "or"
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.OR);
 
             // "("
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.OPEN);
 
             // "three"
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.ID);
             assertTrue(lt.getData().isPresent() && lt.getData().get().equals("three"));
 
             // " "
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.WHITESPACE);
 
             // "not"
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.NOT);
 
             // " "
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.WHITESPACE);
 
             // "four"
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.ID);
             assertTrue(lt.getData().isPresent() && lt.getData().get().equals("four"));
 
             // ")"
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.CLOSE);
 
             // " "
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.WHITESPACE);
 
             // "5"
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.NUMBER);
             assertTrue(lt.getData().isPresent() && lt.getData().get().equals("5"));
 
             // "+"
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.BINARYOP);
             assertTrue(lt.getData().isPresent() && lt.getData().get().equals("+"));
 
             // "six"
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.ID);
             assertTrue(lt.getData().isPresent() && lt.getData().get().equals("six"));
 
             // "-"
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.BINARYOP);
             assertTrue(lt.getData().isPresent() && lt.getData().get().equals("-"));
 
             // " "
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.WHITESPACE);
 
             // "7"
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.NUMBER);
             assertTrue(lt.getData().isPresent() && lt.getData().get().equals("7"));
 
             // "*"
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.BINARYOP);
             assertTrue(lt.getData().isPresent() && lt.getData().get().equals("*"));
 
             // "eight"
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.ID);
             assertTrue(lt.getData().isPresent() && lt.getData().get().equals("eight"));
 
             // "/"
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.BINARYOP);
             assertTrue(lt.getData().isPresent() && lt.getData().get().equals("/"));
 
             // "9"
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.NUMBER);
             assertTrue(lt.getData().isPresent() && lt.getData().get().equals("9"));
 
             // " "
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.WHITESPACE);
 
             // "ten"
+            assertTrue(lex.hasNext());
             lt = lex.next();
             assertTrue(lt.getType() == Token.Type.ID);
             assertTrue(lt.getData().isPresent() && lt.getData().get().equals("ten"));
@@ -197,25 +224,13 @@ class LexerTest
             assertTrue(optional.isPresent());
             assertTrue(optional.get().getType() == Token.Type.ID);
 
-            //whitespace is neither valid nor invalid
-            optional = validLex.nextValid(validTypes, invalidTypes);
-            assertTrue(!optional.isPresent());
-
             optional = validLex.nextValid(validTypes, invalidTypes);
             assertTrue(optional.isPresent());
             assertTrue(optional.get().getType() == Token.Type.AND);
 
-            //whitespace is neither valid nor invalid
-            optional = validLex.nextValid(validTypes, invalidTypes);
-            assertTrue(!optional.isPresent());
-
             optional = validLex.nextValid(validTypes, invalidTypes);
             assertTrue(optional.isPresent());
             assertTrue(optional.get().getType() == Token.Type.OR);
-
-            //whitespace is neither valid nor invalid
-            optional = validLex.nextValid(validTypes, invalidTypes);
-            assertTrue(!optional.isPresent());
 
             optional = validLex.nextValid(validTypes, invalidTypes);
             assertTrue(optional.isPresent());
@@ -239,10 +254,6 @@ class LexerTest
             Optional<LocationalToken> optional = invalidLex.nextValid(validTypes, invalidTypes);
             assertTrue(optional.isPresent());
             assertTrue(optional.get().getType() == Token.Type.ID);
-
-            //whitespace is neither valid nor invalid
-            optional = invalidLex.nextValid(validTypes, invalidTypes);
-            assertTrue(!optional.isPresent());
 
             optional = invalidLex.nextValid(validTypes, invalidTypes);
         }

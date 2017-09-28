@@ -1,14 +1,12 @@
 package jsa70.lexer.src;
 
-import java.util.Optional;
-
 public class CompoundFactor implements Factor
 {
-    private final Identifier LEFT_EXPRESSION;
-    private final Identifier RIGHT_EXPRESSION;
+    private final DisjunctiveExpression LEFT_EXPRESSION;
+    private final DisjunctiveExpression RIGHT_EXPRESSION;
 
 
-    private CompoundFactor(Identifier leftExpression, Identifier rightExpression)
+    private CompoundFactor(DisjunctiveExpression leftExpression, DisjunctiveExpression rightExpression)
     {
         LEFT_EXPRESSION = leftExpression;
         RIGHT_EXPRESSION = rightExpression;
@@ -20,11 +18,11 @@ public class CompoundFactor implements Factor
         //OPEN
         ParserException.verify(Token.Type.OPEN, token);
         //ID
-        Identifier leftId = Identifier.build(lexer.nextValid().get());
+        DisjunctiveExpression leftId = DisjunctiveExpression.build(lexer.nextValid().get(), lexer);
         //AND
         ParserException.verify(Token.Type.AND, lexer.nextValid().get());
         //ID
-        Identifier rightId = Identifier.build(lexer.nextValid().get());
+        DisjunctiveExpression rightId = DisjunctiveExpression.build(lexer.nextValid().get(), lexer);
         //CLOSE
         ParserException.verify(Token.Type.CLOSE, lexer.nextValid().get());
 

@@ -33,4 +33,18 @@ public final class DisjunctiveExpression
         //only statement that can throw an exception, as we must exhaust all other possibilities before failing
         return new DisjunctiveExpression(CompoundFactor.build(first, rest), isPositive);
     }
+
+    public final DisjunctiveExpression negate()
+    {
+        return new DisjunctiveExpression(FACTOR, !POSITIVE);
+    }
+
+    @Override
+    public String toString()
+    {
+        return "DisjunctiveExpression{" +
+                "FACTOR=" + FACTOR +
+                ", POSITIVE=" + POSITIVE +
+                '}';
+    }
 }

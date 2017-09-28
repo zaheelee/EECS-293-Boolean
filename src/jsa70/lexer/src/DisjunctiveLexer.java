@@ -20,7 +20,7 @@ public final class DisjunctiveLexer
                 Arrays.asList(Token.Type.OR, Token.Type.NUMBER, Token.Type.BINARYOP));
     }
 
-    DisjunctiveLexer(String input)
+    public DisjunctiveLexer(String input)
     {
         lexer = new Lexer(input);
     }

@@ -1,4 +1,6 @@
-package jsa70.lexer;
+package jsa70.lexer.Test;
+
+import jsa70.lexer.src.Token;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -9,7 +11,7 @@ class TokenTest
     {
         Token t1 = Token.of(Token.Type.ID, "abcdefg");
         assertEquals(t1.getType(), Token.Type.ID);
-        assertEquals(t1.getData(), "abcdefg");
+        assertEquals(t1.getData().get(), "abcdefg");
 
         Token t2 = Token.of(Token.Type.ID, "abcdefg");
         assertEquals(t1, t2);

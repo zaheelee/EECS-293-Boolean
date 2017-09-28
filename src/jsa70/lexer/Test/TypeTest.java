@@ -1,5 +1,6 @@
-package jsa70.lexer;
+package jsa70.lexer.Test;
 
+import jsa70.lexer.src.Token;
 import org.junit.jupiter.api.Test;
 import java.util.regex.Pattern;
 import static org.junit.jupiter.api.Assertions.*;

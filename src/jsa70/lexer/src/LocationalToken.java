@@ -1,4 +1,4 @@
-package jsa70.lexer;
+package jsa70.lexer.src;
 
 import java.util.Optional;
 

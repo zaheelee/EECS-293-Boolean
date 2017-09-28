@@ -2,7 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31adabb1-b21a-4a63-ab34-3bd5c10fe1bf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jsa70/lexer/Identifier.java" afterPath="$PROJECT_DIR$/src/jsa70/lexer/Identifier.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jsa70/lexer/src/CompoundFactor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jsa70/lexer/src/DisjunctiveExpression.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jsa70/lexer/src/Factor.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/EECS-293-Boolean/jsa70/lexer/Lexer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/EECS-293-Boolean/jsa70/lexer/LexerTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/EECS-293-Boolean/jsa70/lexer/LocationalToken.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/EECS-293-Boolean/jsa70/lexer/ParserException$ErrorCode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/EECS-293-Boolean/jsa70/lexer/ParserException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/EECS-293-Boolean/jsa70/lexer/Token$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/EECS-293-Boolean/jsa70/lexer/Token$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/EECS-293-Boolean/jsa70/lexer/Token$Type.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/EECS-293-Boolean/jsa70/lexer/Token.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/EECS-293-Boolean/jsa70/lexer/TokenTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/EECS-293-Boolean/jsa70/lexer/TypeTest.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jsa70/lexer/DisjunctiveLexer.java" afterPath="$PROJECT_DIR$/src/jsa70/lexer/src/DisjunctiveLexer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jsa70/lexer/Identifier.java" afterPath="$PROJECT_DIR$/src/jsa70/lexer/src/Identifier.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jsa70/lexer/Lexer.java" afterPath="$PROJECT_DIR$/src/jsa70/lexer/src/Lexer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jsa70/lexer/LexerTest.java" afterPath="$PROJECT_DIR$/src/jsa70/lexer/Test/LexerTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jsa70/lexer/LocationalToken.java" afterPath="$PROJECT_DIR$/src/jsa70/lexer/src/LocationalToken.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jsa70/lexer/ParserException.java" afterPath="$PROJECT_DIR$/src/jsa70/lexer/src/ParserException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jsa70/lexer/Token.java" afterPath="$PROJECT_DIR$/src/jsa70/lexer/src/Token.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jsa70/lexer/TokenTest.java" afterPath="$PROJECT_DIR$/src/jsa70/lexer/Test/TokenTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jsa70/lexer/TypeTest.java" afterPath="$PROJECT_DIR$/src/jsa70/lexer/Test/TypeTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,114 +38,118 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Lexer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Lexer.java">
+      <file leaf-file-name="DisjunctiveLexer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/DisjunctiveLexer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="53" column="4" lean-forward="true" selection-start-line="53" selection-start-column="4" selection-end-line="55" selection-end-column="5" />
+            <state relative-caret-position="105">
+              <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#527#528#0" expanded="true" />
-                <element signature="e#564#565#0" expanded="true" />
-                <element signature="e#2175#2176#0" expanded="true" />
-                <element signature="e#2228#2229#0" expanded="true" />
+                <element signature="e#644#645#0" expanded="true" />
+                <element signature="e#684#685#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DisjunctiveLexer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/DisjunctiveLexer.java">
+      <file leaf-file-name="CompoundFactor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/CompoundFactor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#640#641#0" expanded="true" />
-                <element signature="e#680#681#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DisjunctiveExpression.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/DisjunctiveExpression.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ParserException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/ParserException.java">
+        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/ParserException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="41" column="72" lean-forward="false" selection-start-line="41" selection-start-column="72" selection-end-line="41" selection-end-column="72" />
+            <state relative-caret-position="-193">
+              <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
               <folding>
-                <element signature="e#1516#1517#0" expanded="true" />
-                <element signature="e#1549#1550#0" expanded="true" />
-                <element signature="e#1585#1586#0" expanded="true" />
-                <element signature="e#1616#1617#0" expanded="true" />
+                <element signature="e#1520#1521#0" expanded="true" />
+                <element signature="e#1553#1554#0" expanded="true" />
+                <element signature="e#1589#1590#0" expanded="true" />
+                <element signature="e#1620#1621#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Identifier.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Identifier.java">
+      <file leaf-file-name="Identifier.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/Identifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+            <state relative-caret-position="60">
+              <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
               <folding>
-                <element signature="e#122#123#0" expanded="true" />
-                <element signature="e#145#146#0" expanded="true" />
+                <element signature="e#144#145#0" expanded="true" />
+                <element signature="e#167#168#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Factor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/Factor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Token.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Token.java">
+        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/Token.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-166">
-              <caret line="98" column="29" lean-forward="false" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="29" />
+            <state relative-caret-position="60">
+              <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
               <folding>
-                <element signature="e#1033#1034#0" expanded="true" />
-                <element signature="e#1060#1061#0" expanded="true" />
-                <element signature="e#1105#1106#0" expanded="true" />
-                <element signature="e#1132#1133#0" expanded="true" />
-                <element signature="e#2308#2309#0" expanded="true" />
-                <element signature="e#2346#2347#0" expanded="true" />
-                <element signature="e#2390#2391#0" expanded="true" />
-                <element signature="e#2428#2429#0" expanded="true" />
-                <element signature="e#2474#2475#0" expanded="true" />
-                <element signature="e#2514#2515#0" expanded="true" />
-                <element signature="e#2591#2592#0" expanded="true" />
-                <element signature="e#2631#2632#0" expanded="true" />
-                <element signature="e#3428#3429#0" expanded="true" />
-                <element signature="e#3490#3491#0" expanded="true" />
+                <element signature="e#1037#1038#0" expanded="true" />
+                <element signature="e#1064#1065#0" expanded="true" />
+                <element signature="e#1109#1110#0" expanded="true" />
+                <element signature="e#1136#1137#0" expanded="true" />
+                <element signature="e#2312#2313#0" expanded="true" />
+                <element signature="e#2350#2351#0" expanded="true" />
+                <element signature="e#2394#2395#0" expanded="true" />
+                <element signature="e#2432#2433#0" expanded="true" />
+                <element signature="e#2478#2479#0" expanded="true" />
+                <element signature="e#2518#2519#0" expanded="true" />
+                <element signature="e#2595#2596#0" expanded="true" />
+                <element signature="e#2635#2636#0" expanded="true" />
+                <element signature="e#3432#3433#0" expanded="true" />
+                <element signature="e#3494#3495#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="LexerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/LexerTest.java">
+        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Test/LexerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="271" column="21" lean-forward="true" selection-start-line="271" selection-start-column="21" selection-end-line="271" selection-end-column="96" />
+            <state relative-caret-position="60">
+              <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="TokenTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/TokenTest.java">
+        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Test/TokenTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="54" lean-forward="false" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TypeTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/TypeTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="55" column="14" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="14" />
+            <state relative-caret-position="195">
+              <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -129,31 +157,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LocationalToken.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/LocationalToken.java">
+      <file leaf-file-name="TypeTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Test/TypeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+            <state relative-caret-position="90">
+              <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
               <folding>
-                <element signature="e#311#312#0" expanded="true" />
-                <element signature="e#339#340#0" expanded="true" />
-                <element signature="e#378#379#0" expanded="true" />
-                <element signature="e#416#417#0" expanded="true" />
-                <element signature="e#461#462#0" expanded="true" />
-                <element signature="e#499#500#0" expanded="true" />
-                <element signature="e#539#540#0" expanded="true" />
-                <element signature="e#570#571#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/README">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="44" lean-forward="true" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -164,6 +175,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -189,6 +201,17 @@
         <option value="$PROJECT_DIR$/src/jsa70/lexer/Token.java" />
         <option value="$PROJECT_DIR$/src/jsa70/lexer/ParserException.java" />
         <option value="$PROJECT_DIR$/src/jsa70/lexer/Identifier.java" />
+        <option value="$PROJECT_DIR$/src/jsa70/lexer/Test/TypeTest.java" />
+        <option value="$PROJECT_DIR$/src/jsa70/lexer/Test/LexerTest.java" />
+        <option value="$PROJECT_DIR$/src/jsa70/lexer/src/DisjunctiveLexer.java" />
+        <option value="$PROJECT_DIR$/src/jsa70/lexer/src/Lexer.java" />
+        <option value="$PROJECT_DIR$/src/jsa70/lexer/src/LocationalToken.java" />
+        <option value="$PROJECT_DIR$/src/jsa70/lexer/src/ParserException.java" />
+        <option value="$PROJECT_DIR$/src/jsa70/lexer/src/Token.java" />
+        <option value="$PROJECT_DIR$/src/jsa70/lexer/Test/TokenTest.java" />
+        <option value="$PROJECT_DIR$/src/jsa70/lexer/src/CompoundFactor.java" />
+        <option value="$PROJECT_DIR$/src/jsa70/lexer/src/Identifier.java" />
+        <option value="$PROJECT_DIR$/src/jsa70/lexer/src/DisjunctiveExpression.java" />
       </list>
     </option>
   </component>
@@ -234,6 +257,20 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="lexer" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="EECS-293-Boolean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EECS-293-Boolean" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lexer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EECS-293-Boolean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EECS-293-Boolean" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lexer" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -266,46 +303,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LexerTest">
+  <component name="RunManager" selected="JUnit.TypeTest">
     <configuration name="LexerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="jsa70.lexer.*" />
+          <option name="PATTERN" value="jsa70.lexer.Test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="EECS-293-Boolean" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="jsa70.lexer" />
-      <option name="MAIN_CLASS_NAME" value="jsa70.lexer.LexerTest" />
+      <option name="PACKAGE_NAME" value="jsa70.lexer.Test" />
+      <option name="MAIN_CLASS_NAME" value="jsa70.lexer.Test.LexerTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="LexerTest.hasNext" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="jsa70.lexer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="EECS-293-Boolean" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="jsa70.lexer" />
-      <option name="MAIN_CLASS_NAME" value="jsa70.lexer.LexerTest" />
-      <option name="METHOD_NAME" value="hasNext" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -320,15 +332,15 @@
     <configuration name="LexerTest.nextValid_InvalidInputs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="jsa70.lexer.*" />
+          <option name="PATTERN" value="jsa70.lexer.Test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="EECS-293-Boolean" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="jsa70.lexer" />
-      <option name="MAIN_CLASS_NAME" value="jsa70.lexer.LexerTest" />
+      <option name="PACKAGE_NAME" value="jsa70.lexer.Test" />
+      <option name="MAIN_CLASS_NAME" value="jsa70.lexer.Test.LexerTest" />
       <option name="METHOD_NAME" value="nextValid_InvalidInputs" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -345,15 +357,15 @@
     <configuration name="LexerTest.nextValid_ValidInputs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="jsa70.lexer.*" />
+          <option name="PATTERN" value="jsa70.lexer.Test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="EECS-293-Boolean" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="jsa70.lexer" />
-      <option name="MAIN_CLASS_NAME" value="jsa70.lexer.LexerTest" />
+      <option name="PACKAGE_NAME" value="jsa70.lexer.Test" />
+      <option name="MAIN_CLASS_NAME" value="jsa70.lexer.Test.LexerTest" />
       <option name="METHOD_NAME" value="nextValid_ValidInputs" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -367,20 +379,45 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="LexerTest.next_getAllTokens" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TokenTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="jsa70.lexer.*" />
+          <option name="PATTERN" value="jsa70.lexer.Test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="EECS-293-Boolean" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="jsa70.lexer" />
-      <option name="MAIN_CLASS_NAME" value="jsa70.lexer.LexerTest" />
-      <option name="METHOD_NAME" value="next_getAllTokens" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="jsa70.lexer.Test" />
+      <option name="MAIN_CLASS_NAME" value="jsa70.lexer.Test.TokenTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TypeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="jsa70.lexer.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="EECS-293-Boolean" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="jsa70.lexer.Test" />
+      <option name="MAIN_CLASS_NAME" value="jsa70.lexer.Test.TypeTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -473,19 +510,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.LexerTest.next_getAllTokens" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.LexerTest.hasNext" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.LexerTest.nextValid_ValidInputs" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.LexerTest.nextValid_InvalidInputs" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.LexerTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.LexerTest.nextValid_ValidInputs" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.LexerTest.nextValid_InvalidInputs" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.LexerTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TokenTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TypeTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.LexerTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.LexerTest.nextValid_InvalidInputs" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.LexerTest.nextValid_ValidInputs" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.LexerTest.next_getAllTokens" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.LexerTest.hasNext" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TypeTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TokenTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.LexerTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.LexerTest.nextValid_InvalidInputs" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.LexerTest.nextValid_ValidInputs" />
       </list>
     </recent_temporary>
   </component>
@@ -509,20 +546,11 @@
     <history-entry file="LexerTest - 2017.09.27 at 11h 50m 22s.xml">
       <configuration name="LexerTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LexerTest - 2017.09.27 at 12h 23m 04s.xml">
+      <configuration name="LexerTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="LexerTest_nextValid_InvalidInputs - 2017.09.27 at 11h 48m 23s.xml">
       <configuration name="LexerTest.nextValid_InvalidInputs" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LexerTest_nextValid_ValidInputs - 2017.09.21 at 09h 47m 49s.xml">
-      <configuration name="LexerTest.nextValid_ValidInputs" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LexerTest_nextValid_ValidInputs - 2017.09.21 at 09h 48m 49s.xml">
-      <configuration name="LexerTest.nextValid_ValidInputs" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LexerTest_nextValid_ValidInputs - 2017.09.21 at 09h 49m 43s.xml">
-      <configuration name="LexerTest.nextValid_ValidInputs" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LexerTest_nextValid_ValidInputs - 2017.09.21 at 09h 50m 22s.xml">
-      <configuration name="LexerTest.nextValid_ValidInputs" configurationId="JUnit" />
     </history-entry>
     <history-entry file="LexerTest_nextValid_ValidInputs - 2017.09.21 at 09h 51m 01s.xml">
       <configuration name="LexerTest.nextValid_ValidInputs" configurationId="JUnit" />
@@ -535,6 +563,15 @@
     </history-entry>
     <history-entry file="LexerTest_nextValid_ValidInputs - 2017.09.27 at 11h 48m 14s.xml">
       <configuration name="LexerTest.nextValid_ValidInputs" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TokenTest - 2017.09.27 at 12h 23m 09s.xml">
+      <configuration name="TokenTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TokenTest - 2017.09.27 at 12h 23m 50s.xml">
+      <configuration name="TokenTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TypeTest - 2017.09.27 at 12h 23m 57s.xml">
+      <configuration name="TypeTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -599,15 +636,17 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/TokenTest.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Test/TokenTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="54" lean-forward="false" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/TypeTest.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Test/TypeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
           <caret line="55" column="14" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="14" />
@@ -617,19 +656,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/LocationalToken.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/LocationalToken.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
           <folding>
-            <element signature="e#311#312#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -642,43 +682,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/ParserException.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/ParserException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
           <folding>
-            <element signature="e#1516#1517#0" expanded="true" />
-            <element signature="e#1549#1550#0" expanded="true" />
-            <element signature="e#1585#1586#0" expanded="true" />
-            <element signature="e#1616#1617#0" expanded="true" />
+            <element signature="e#1520#1521#0" expanded="true" />
+            <element signature="e#1553#1554#0" expanded="true" />
+            <element signature="e#1589#1590#0" expanded="true" />
+            <element signature="e#1620#1621#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Token.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/Token.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="773">
           <caret line="104" column="53" lean-forward="false" selection-start-line="104" selection-start-column="53" selection-end-line="104" selection-end-column="53" />
           <folding>
-            <element signature="e#1033#1034#0" expanded="true" />
-            <element signature="e#1060#1061#0" expanded="true" />
-            <element signature="e#1105#1106#0" expanded="true" />
-            <element signature="e#1132#1133#0" expanded="true" />
-            <element signature="e#2308#2309#0" expanded="true" />
-            <element signature="e#2346#2347#0" expanded="true" />
-            <element signature="e#2390#2391#0" expanded="true" />
-            <element signature="e#2428#2429#0" expanded="true" />
-            <element signature="e#2474#2475#0" expanded="true" />
-            <element signature="e#2514#2515#0" expanded="true" />
-            <element signature="e#2591#2592#0" expanded="true" />
-            <element signature="e#2631#2632#0" expanded="true" />
-            <element signature="e#3428#3429#0" expanded="true" />
-            <element signature="e#3490#3491#0" expanded="true" />
+            <element signature="e#1037#1038#0" expanded="true" />
+            <element signature="e#1064#1065#0" expanded="true" />
+            <element signature="e#1109#1110#0" expanded="true" />
+            <element signature="e#1136#1137#0" expanded="true" />
+            <element signature="e#2312#2313#0" expanded="true" />
+            <element signature="e#2350#2351#0" expanded="true" />
+            <element signature="e#2394#2395#0" expanded="true" />
+            <element signature="e#2432#2433#0" expanded="true" />
+            <element signature="e#2478#2479#0" expanded="true" />
+            <element signature="e#2518#2519#0" expanded="true" />
+            <element signature="e#2595#2596#0" expanded="true" />
+            <element signature="e#2635#2636#0" expanded="true" />
+            <element signature="e#3432#3433#0" expanded="true" />
+            <element signature="e#3494#3495#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/LexerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Test/LexerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
           <caret line="250" column="89" lean-forward="false" selection-start-line="250" selection-start-column="89" selection-end-line="250" selection-end-column="89" />
@@ -686,29 +726,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Lexer.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/Lexer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="32" column="45" lean-forward="false" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-            <element signature="e#2175#2176#0" expanded="true" />
-            <element signature="e#2228#2229#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#2179#2180#0" expanded="true" />
+            <element signature="e#2232#2233#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/TokenTest.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Test/TokenTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="54" lean-forward="false" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/TypeTest.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Test/TypeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
           <caret line="55" column="14" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="14" />
@@ -718,42 +760,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Token.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/Token.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="773">
           <caret line="104" column="53" lean-forward="false" selection-start-line="104" selection-start-column="53" selection-end-line="104" selection-end-column="53" />
           <folding>
-            <element signature="e#1033#1034#0" expanded="true" />
-            <element signature="e#1060#1061#0" expanded="true" />
-            <element signature="e#1105#1106#0" expanded="true" />
-            <element signature="e#1132#1133#0" expanded="true" />
-            <element signature="e#2308#2309#0" expanded="true" />
-            <element signature="e#2346#2347#0" expanded="true" />
-            <element signature="e#2390#2391#0" expanded="true" />
-            <element signature="e#2428#2429#0" expanded="true" />
-            <element signature="e#2474#2475#0" expanded="true" />
-            <element signature="e#2514#2515#0" expanded="true" />
-            <element signature="e#2591#2592#0" expanded="true" />
-            <element signature="e#2631#2632#0" expanded="true" />
-            <element signature="e#3428#3429#0" expanded="true" />
-            <element signature="e#3490#3491#0" expanded="true" />
+            <element signature="e#1037#1038#0" expanded="true" />
+            <element signature="e#1064#1065#0" expanded="true" />
+            <element signature="e#1109#1110#0" expanded="true" />
+            <element signature="e#1136#1137#0" expanded="true" />
+            <element signature="e#2312#2313#0" expanded="true" />
+            <element signature="e#2350#2351#0" expanded="true" />
+            <element signature="e#2394#2395#0" expanded="true" />
+            <element signature="e#2432#2433#0" expanded="true" />
+            <element signature="e#2478#2479#0" expanded="true" />
+            <element signature="e#2518#2519#0" expanded="true" />
+            <element signature="e#2595#2596#0" expanded="true" />
+            <element signature="e#2635#2636#0" expanded="true" />
+            <element signature="e#3432#3433#0" expanded="true" />
+            <element signature="e#3494#3495#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/LocationalToken.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/LocationalToken.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
           <folding>
-            <element signature="e#311#312#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -766,7 +809,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/LexerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Test/LexerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="998">
           <caret line="228" column="66" lean-forward="false" selection-start-line="228" selection-start-column="66" selection-end-line="228" selection-end-column="66" />
@@ -774,29 +817,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/ParserException.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/ParserException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
           <folding>
-            <element signature="e#1516#1517#0" expanded="true" />
-            <element signature="e#1549#1550#0" expanded="true" />
-            <element signature="e#1585#1586#0" expanded="true" />
-            <element signature="e#1616#1617#0" expanded="true" />
+            <element signature="e#1520#1521#0" expanded="true" />
+            <element signature="e#1553#1554#0" expanded="true" />
+            <element signature="e#1589#1590#0" expanded="true" />
+            <element signature="e#1620#1621#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Lexer.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/Lexer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
           <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-            <element signature="e#2175#2176#0" expanded="true" />
-            <element signature="e#2228#2229#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#2179#2180#0" expanded="true" />
+            <element signature="e#2232#2233#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -809,119 +852,146 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/TokenTest.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/Lexer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="54" lean-forward="false" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+        <state relative-caret-position="105">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#2179#2180#0" expanded="true" />
+            <element signature="e#2232#2233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/LocationalToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding>
+            <element signature="e#1037#1038#0" expanded="true" />
+            <element signature="e#1064#1065#0" expanded="true" />
+            <element signature="e#1109#1110#0" expanded="true" />
+            <element signature="e#1136#1137#0" expanded="true" />
+            <element signature="e#2312#2313#0" expanded="true" />
+            <element signature="e#2350#2351#0" expanded="true" />
+            <element signature="e#2394#2395#0" expanded="true" />
+            <element signature="e#2432#2433#0" expanded="true" />
+            <element signature="e#2478#2479#0" expanded="true" />
+            <element signature="e#2518#2519#0" expanded="true" />
+            <element signature="e#2595#2596#0" expanded="true" />
+            <element signature="e#2635#2636#0" expanded="true" />
+            <element signature="e#3432#3433#0" expanded="true" />
+            <element signature="e#3494#3495#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Test/LexerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/TypeTest.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Test/TokenTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="55" column="14" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="14" />
+        <state relative-caret-position="195">
+          <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/LocationalToken.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Test/TypeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+        <state relative-caret-position="90">
+          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
           <folding>
-            <element signature="e#311#312#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/LexerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/ParserException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="271" column="21" lean-forward="true" selection-start-line="271" selection-start-column="21" selection-end-line="271" selection-end-column="96" />
+        <state relative-caret-position="-193">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding>
+            <element signature="e#1520#1521#0" expanded="true" />
+            <element signature="e#1553#1554#0" expanded="true" />
+            <element signature="e#1589#1590#0" expanded="true" />
+            <element signature="e#1620#1621#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/Identifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <folding>
+            <element signature="e#144#145#0" expanded="true" />
+            <element signature="e#167#168#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/Factor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Lexer.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/DisjunctiveLexer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="53" column="4" lean-forward="true" selection-start-line="53" selection-start-column="4" selection-end-line="55" selection-end-column="5" />
+        <state relative-caret-position="105">
+          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-            <element signature="e#2175#2176#0" expanded="true" />
-            <element signature="e#2228#2229#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/DisjunctiveLexer.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/CompoundFactor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/ParserException.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/DisjunctiveExpression.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="41" column="72" lean-forward="false" selection-start-line="41" selection-start-column="72" selection-end-line="41" selection-end-column="72" />
-          <folding>
-            <element signature="e#1516#1517#0" expanded="true" />
-            <element signature="e#1549#1550#0" expanded="true" />
-            <element signature="e#1585#1586#0" expanded="true" />
-            <element signature="e#1616#1617#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Token.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-166">
-          <caret line="98" column="29" lean-forward="false" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="29" />
-          <folding>
-            <element signature="e#1033#1034#0" expanded="true" />
-            <element signature="e#1060#1061#0" expanded="true" />
-            <element signature="e#1105#1106#0" expanded="true" />
-            <element signature="e#1132#1133#0" expanded="true" />
-            <element signature="e#2308#2309#0" expanded="true" />
-            <element signature="e#2346#2347#0" expanded="true" />
-            <element signature="e#2390#2391#0" expanded="true" />
-            <element signature="e#2428#2429#0" expanded="true" />
-            <element signature="e#2474#2475#0" expanded="true" />
-            <element signature="e#2514#2515#0" expanded="true" />
-            <element signature="e#2591#2592#0" expanded="true" />
-            <element signature="e#2631#2632#0" expanded="true" />
-            <element signature="e#3428#3429#0" expanded="true" />
-            <element signature="e#3490#3491#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Identifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
-          <folding>
-            <element signature="e#122#123#0" expanded="true" />
-            <element signature="e#145#146#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="266">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>

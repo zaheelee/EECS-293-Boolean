@@ -1,5 +1,9 @@
-package jsa70.lexer;
+package jsa70.lexer.Test;
 
+import jsa70.lexer.src.Lexer;
+import jsa70.lexer.src.LocationalToken;
+import jsa70.lexer.src.ParserException;
+import jsa70.lexer.src.Token;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

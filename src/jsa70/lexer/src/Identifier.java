@@ -1,6 +1,6 @@
-package jsa70.lexer;
+package jsa70.lexer.src;
 
-public final class Identifier
+public final class Identifier implements Factor
 {
     private final String ID;
 

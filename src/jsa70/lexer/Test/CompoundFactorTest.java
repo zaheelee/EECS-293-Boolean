@@ -20,7 +20,7 @@ class CompoundFactorTest
     @BeforeEach
     void setUp()
     {
-        string1 = "(one and two)";
+        string1 = "(one and (not two and three))";
         string2 = "(one and )";
         string3 = "five";
 

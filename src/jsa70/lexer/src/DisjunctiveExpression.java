@@ -17,7 +17,6 @@ public final class DisjunctiveExpression
     {
         boolean isPositive = true;
         LocationalToken first = token;
-        DisjunctiveLexer rest = lexer;
 
         //optional NOT
         if(first.getType().equals(Token.Type.NOT))
@@ -31,7 +30,7 @@ public final class DisjunctiveExpression
             return new DisjunctiveExpression(Identifier.build(first), isPositive);
         }
         //only statement that can throw an exception, as we must exhaust all other possibilities before failing
-        return new DisjunctiveExpression(CompoundFactor.build(first, rest), isPositive);
+        return new DisjunctiveExpression(CompoundFactor.build(first, lexer), isPositive);
     }
 
     public final DisjunctiveExpression negate()
@@ -42,9 +41,10 @@ public final class DisjunctiveExpression
     @Override
     public String toString()
     {
-        return "DisjunctiveExpression{" +
-                "FACTOR=" + FACTOR +
-                ", POSITIVE=" + POSITIVE +
-                '}';
+        if(POSITIVE)
+        {
+            return FACTOR.toString();
+        }
+        return "not " + FACTOR.toString();
     }
 }

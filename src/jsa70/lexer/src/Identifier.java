@@ -19,8 +19,6 @@ public final class Identifier implements Factor
     @Override
     public String toString()
     {
-        return "Identifier{" +
-                "ID='" + ID + '\'' +
-                '}';
+        return ID;
     }
 }

@@ -17,11 +17,11 @@ public class CompoundFactor implements Factor
     {
         //OPEN
         ParserException.verify(Token.Type.OPEN, token);
-        //ID
+        //ID or Expression
         DisjunctiveExpression leftId = DisjunctiveExpression.build(lexer.nextValid().get(), lexer);
         //AND
         ParserException.verify(Token.Type.AND, lexer.nextValid().get());
-        //ID
+        //ID or Expression
         DisjunctiveExpression rightId = DisjunctiveExpression.build(lexer.nextValid().get(), lexer);
         //CLOSE
         ParserException.verify(Token.Type.CLOSE, lexer.nextValid().get());
@@ -32,9 +32,6 @@ public class CompoundFactor implements Factor
     @Override
     public String toString()
     {
-        return "CompoundFactor{" +
-                "LEFT_EXPRESSION=" + LEFT_EXPRESSION +
-                ", RIGHT_EXPRESSION=" + RIGHT_EXPRESSION +
-                '}';
+        return "(" + LEFT_EXPRESSION + " and " + RIGHT_EXPRESSION + ")";
     }
 }

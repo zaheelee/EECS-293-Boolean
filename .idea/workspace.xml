@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31adabb1-b21a-4a63-ab34-3bd5c10fe1bf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jsa70/lexer/Test/CompoundFactorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EECS-293-Boolean/jsa70/lexer/src/CompoundFactor.class" afterPath="$PROJECT_DIR$/out/production/EECS-293-Boolean/jsa70/lexer/src/CompoundFactor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EECS-293-Boolean/jsa70/lexer/src/DisjunctiveLexer.class" afterPath="$PROJECT_DIR$/out/production/EECS-293-Boolean/jsa70/lexer/src/DisjunctiveLexer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EECS-293-Boolean/jsa70/lexer/src/Identifier.class" afterPath="$PROJECT_DIR$/out/production/EECS-293-Boolean/jsa70/lexer/src/Identifier.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jsa70/lexer/Test/CompoundFactorTest.java" afterPath="$PROJECT_DIR$/src/jsa70/lexer/Test/CompoundFactorTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jsa70/lexer/src/CompoundFactor.java" afterPath="$PROJECT_DIR$/src/jsa70/lexer/src/CompoundFactor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jsa70/lexer/src/DisjunctiveExpression.java" afterPath="$PROJECT_DIR$/src/jsa70/lexer/src/DisjunctiveExpression.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jsa70/lexer/src/DisjunctiveLexer.java" afterPath="$PROJECT_DIR$/src/jsa70/lexer/src/DisjunctiveLexer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jsa70/lexer/src/Identifier.java" afterPath="$PROJECT_DIR$/src/jsa70/lexer/src/Identifier.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +20,7 @@
       <file leaf-file-name="DisjunctiveLexer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/DisjunctiveLexer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="253">
               <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -38,20 +34,11 @@
       <file leaf-file-name="CompoundFactor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/CompoundFactor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-171">
-              <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompoundFactorTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Test/CompoundFactorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="55" column="29" lean-forward="false" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
+            <state relative-caret-position="345">
+              <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1138#1139#0" expanded="true" />
+                <element signature="e#1217#1218#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,11 +47,23 @@
       <file leaf-file-name="DisjunctiveExpression.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/DisjunctiveExpression.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+            <state relative-caret-position="360">
+              <caret line="32" column="74" lean-forward="false" selection-start-line="32" selection-start-column="74" selection-end-line="32" selection-end-column="74" />
               <folding>
-                <element signature="e#1113#1114#0" expanded="true" />
-                <element signature="e#1180#1181#0" expanded="true" />
+                <element signature="e#1075#1076#0" expanded="true" />
+                <element signature="e#1142#1143#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompoundFactorTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Test/CompoundFactorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,7 +72,7 @@
       <file leaf-file-name="ParserException.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/ParserException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-193">
+            <state relative-caret-position="-250">
               <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
               <folding>
                 <element signature="e#1520#1521#0" expanded="true" />
@@ -85,14 +84,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Token.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/Token.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1429">
+              <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Identifier.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/Identifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+            <state relative-caret-position="315">
+              <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
               <folding>
                 <element signature="e#144#145#0" expanded="true" />
                 <element signature="e#167#168#0" expanded="true" />
+                <element signature="e#437#438#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,16 +114,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LexerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Test/LexerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -181,11 +182,11 @@
         <option value="$PROJECT_DIR$/src/jsa70/lexer/src/ParserException.java" />
         <option value="$PROJECT_DIR$/src/jsa70/lexer/src/Token.java" />
         <option value="$PROJECT_DIR$/src/jsa70/lexer/Test/TokenTest.java" />
+        <option value="$PROJECT_DIR$/src/jsa70/lexer/src/DisjunctiveLexer.java" />
+        <option value="$PROJECT_DIR$/src/jsa70/lexer/Test/CompoundFactorTest.java" />
         <option value="$PROJECT_DIR$/src/jsa70/lexer/src/Identifier.java" />
         <option value="$PROJECT_DIR$/src/jsa70/lexer/src/CompoundFactor.java" />
-        <option value="$PROJECT_DIR$/src/jsa70/lexer/src/DisjunctiveLexer.java" />
         <option value="$PROJECT_DIR$/src/jsa70/lexer/src/DisjunctiveExpression.java" />
-        <option value="$PROJECT_DIR$/src/jsa70/lexer/Test/CompoundFactorTest.java" />
       </list>
     </option>
   </component>
@@ -230,6 +231,13 @@
               <item name="EECS-293-Boolean" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="lexer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EECS-293-Boolean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EECS-293-Boolean" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lexer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -480,8 +488,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.CompoundFactorTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CompoundFactorTest.build_invalidInputs" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CompoundFactorTest.build_validInputs" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CompoundFactorTest.build_validInputs" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CompoundFactorTest.build_invalidInputs" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.TypeTest" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.TokenTest" />
       </list>
@@ -507,6 +515,12 @@
     <history-entry file="CompoundFactorTest - 2017.09.28 at 10h 07m 41s.xml">
       <configuration name="CompoundFactorTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CompoundFactorTest - 2017.09.28 at 15h 12m 26s.xml">
+      <configuration name="CompoundFactorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CompoundFactorTest - 2017.09.28 at 15h 36m 01s.xml">
+      <configuration name="CompoundFactorTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="CompoundFactorTest_build_invalidInputs - 2017.09.28 at 10h 06m 35s.xml">
       <configuration name="CompoundFactorTest.build_invalidInputs" configurationId="JUnit" />
     </history-entry>
@@ -525,33 +539,28 @@
     <history-entry file="CompoundFactorTest_build_validInputs - 2017.09.28 at 10h 05m 02s.xml">
       <configuration name="CompoundFactorTest.build_validInputs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TokenTest - 2017.09.27 at 12h 23m 09s.xml">
-      <configuration name="TokenTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TokenTest - 2017.09.27 at 12h 23m 50s.xml">
-      <configuration name="TokenTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TypeTest - 2017.09.27 at 12h 23m 57s.xml">
-      <configuration name="TypeTest" configurationId="JUnit" />
+    <history-entry file="CompoundFactorTest_build_validInputs - 2017.09.28 at 15h 13m 39s.xml">
+      <configuration name="CompoundFactorTest.build_validInputs" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24533333" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.244" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -659,22 +668,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="773">
           <caret line="104" column="53" lean-forward="false" selection-start-line="104" selection-start-column="53" selection-end-line="104" selection-end-column="53" />
-          <folding>
-            <element signature="e#1037#1038#0" expanded="true" />
-            <element signature="e#1064#1065#0" expanded="true" />
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1136#1137#0" expanded="true" />
-            <element signature="e#2312#2313#0" expanded="true" />
-            <element signature="e#2350#2351#0" expanded="true" />
-            <element signature="e#2394#2395#0" expanded="true" />
-            <element signature="e#2432#2433#0" expanded="true" />
-            <element signature="e#2478#2479#0" expanded="true" />
-            <element signature="e#2518#2519#0" expanded="true" />
-            <element signature="e#2595#2596#0" expanded="true" />
-            <element signature="e#2635#2636#0" expanded="true" />
-            <element signature="e#3432#3433#0" expanded="true" />
-            <element signature="e#3494#3495#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -724,22 +718,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="773">
           <caret line="104" column="53" lean-forward="false" selection-start-line="104" selection-start-column="53" selection-end-line="104" selection-end-column="53" />
-          <folding>
-            <element signature="e#1037#1038#0" expanded="true" />
-            <element signature="e#1064#1065#0" expanded="true" />
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1136#1137#0" expanded="true" />
-            <element signature="e#2312#2313#0" expanded="true" />
-            <element signature="e#2350#2351#0" expanded="true" />
-            <element signature="e#2394#2395#0" expanded="true" />
-            <element signature="e#2432#2433#0" expanded="true" />
-            <element signature="e#2478#2479#0" expanded="true" />
-            <element signature="e#2518#2519#0" expanded="true" />
-            <element signature="e#2595#2596#0" expanded="true" />
-            <element signature="e#2635#2636#0" expanded="true" />
-            <element signature="e#3432#3433#0" expanded="true" />
-            <element signature="e#3494#3495#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -844,29 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/Token.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding>
-            <element signature="e#1037#1038#0" expanded="true" />
-            <element signature="e#1064#1065#0" expanded="true" />
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1136#1137#0" expanded="true" />
-            <element signature="e#2312#2313#0" expanded="true" />
-            <element signature="e#2350#2351#0" expanded="true" />
-            <element signature="e#2394#2395#0" expanded="true" />
-            <element signature="e#2432#2433#0" expanded="true" />
-            <element signature="e#2478#2479#0" expanded="true" />
-            <element signature="e#2518#2519#0" expanded="true" />
-            <element signature="e#2595#2596#0" expanded="true" />
-            <element signature="e#2635#2636#0" expanded="true" />
-            <element signature="e#3432#3433#0" expanded="true" />
-            <element signature="e#3494#3495#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Test/LexerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -897,7 +853,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/ParserException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-193">
+        <state relative-caret-position="-250">
           <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
           <folding>
             <element signature="e#1520#1521#0" expanded="true" />
@@ -908,13 +864,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/Identifier.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/Token.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        <state relative-caret-position="-1429">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/DisjunctiveLexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
           <folding>
-            <element signature="e#144#145#0" expanded="true" />
-            <element signature="e#167#168#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#651#652#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -927,41 +892,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/DisjunctiveLexer.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/CompoundFactor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        <state relative-caret-position="345">
+          <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
+            <element signature="e#1138#1139#0" expanded="true" />
+            <element signature="e#1217#1218#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/CompoundFactor.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/Identifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171">
-          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="315">
+          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding>
+            <element signature="e#144#145#0" expanded="true" />
+            <element signature="e#167#168#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/DisjunctiveExpression.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+        <state relative-caret-position="360">
+          <caret line="32" column="74" lean-forward="false" selection-start-line="32" selection-start-column="74" selection-end-line="32" selection-end-column="74" />
           <folding>
-            <element signature="e#1113#1114#0" expanded="true" />
-            <element signature="e#1180#1181#0" expanded="true" />
+            <element signature="e#1075#1076#0" expanded="true" />
+            <element signature="e#1142#1143#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/Test/CompoundFactorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="29" lean-forward="false" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
+        <state relative-caret-position="330">
+          <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

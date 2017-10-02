@@ -15,11 +15,13 @@ class CompoundFactorTest
     String string3;
     String string4;
     String string5;
+    String string6;
     DisjunctiveLexer lex1;
     DisjunctiveLexer lex2;
     DisjunctiveLexer lex3;
     DisjunctiveLexer lex4;
     DisjunctiveLexer lex5;
+    DisjunctiveLexer lex6;
 
     @BeforeEach
     void setUp()
@@ -29,12 +31,14 @@ class CompoundFactorTest
         string3 = "five";
         string4 = "(one and two)";
         string5 = "(one and (two and three))";
+        string6 = "(one and not (two and three))";
 
         lex1 = new DisjunctiveLexer(string1);
         lex2 = new DisjunctiveLexer(string2);
         lex3 = new DisjunctiveLexer(string3);
         lex4 = new DisjunctiveLexer(string4);
         lex5 = new DisjunctiveLexer(string5);
+        lex6 = new DisjunctiveLexer(string6);
     }
 
     @Test
@@ -86,6 +90,9 @@ class CompoundFactorTest
         {
             CompoundFactor compFactor = CompoundFactor.build(lex5.nextValid().get(), lex5);
             assertEquals(compFactor.conjunctiveRepresentation().getRepresentation(), "(not one or (not two or not three))");
+
+            compFactor = CompoundFactor.build(lex6.nextValid().get(), lex6);
+            assertEquals(compFactor.conjunctiveRepresentation().getRepresentation(), "(not one or (two and three))");
         }
         catch (ParserException e)
         {

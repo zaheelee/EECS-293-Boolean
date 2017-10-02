@@ -30,6 +30,18 @@ public class CompoundFactor implements Factor
     }
 
     @Override
+    public ConjunctiveRepresentation conjunctiveRepresentation()
+    {
+        StringBuilder builder = new StringBuilder();
+        builder.append('(');
+        builder.append(LEFT_EXPRESSION.conjunctiveRepresentation());
+        builder.append(" or ");
+        builder.append(RIGHT_EXPRESSION.conjunctiveRepresentation());
+        builder.append(')');
+        return new ConjunctiveRepresentation(builder.toString(), true);
+    }
+
+    @Override
     public String toString()
     {
         return "(" + LEFT_EXPRESSION + " and " + RIGHT_EXPRESSION + ")";

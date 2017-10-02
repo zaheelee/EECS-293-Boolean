@@ -33,6 +33,28 @@ public final class DisjunctiveExpression
         return new DisjunctiveExpression(CompoundFactor.build(first, lexer), isPositive);
     }
 
+    public final String conjunctiveRepresentation()
+    {
+        StringBuilder builder = new StringBuilder();
+        ConjunctiveRepresentation conjunctiveRep = FACTOR.conjunctiveRepresentation();
+
+        if(conjunctiveRep.getNegation() && POSITIVE) // already in format
+        {
+            builder.append(conjunctiveRep.getRepresentation());
+        }
+        else if(conjunctiveRep.getNegation()) //POSITIVE == FALSE, already in format plus "not"
+        {
+            builder.append(FACTOR.toString());
+        }
+        else //NEGATION == false, POSITIVE == false, not in format plus "not"
+        {
+            builder.append("not ");
+            builder.append(conjunctiveRep.getRepresentation());
+        }
+
+        return builder.toString();
+    }
+
     public final DisjunctiveExpression negate()
     {
         return new DisjunctiveExpression(FACTOR, !POSITIVE);

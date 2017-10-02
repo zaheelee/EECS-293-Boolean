@@ -17,6 +17,12 @@ public final class Identifier implements Factor
     }
 
     @Override
+    public ConjunctiveRepresentation conjunctiveRepresentation()
+    {
+        return new ConjunctiveRepresentation(ID, false);
+    }
+
+    @Override
     public String toString()
     {
         return ID;

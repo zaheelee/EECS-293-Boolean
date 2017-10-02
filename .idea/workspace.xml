@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31adabb1-b21a-4a63-ab34-3bd5c10fe1bf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jsa70/lexer/src/ConjuctiveRepresentation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jsa70/lexer/src/ConjuctiveRepresentation.java" afterPath="$PROJECT_DIR$/src/jsa70/lexer/src/ConjunctiveRepresentation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jsa70/lexer/src/Factor.java" afterPath="$PROJECT_DIR$/src/jsa70/lexer/src/Factor.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,16 +67,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConjuctiveRepresentation.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/ConjuctiveRepresentation.java">
+      <file leaf-file-name="ConjunctiveRepresentation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/ConjunctiveRepresentation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="240">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding>
-                <element signature="e#358#359#0" expanded="true" />
-                <element signature="e#395#396#0" expanded="true" />
-                <element signature="e#441#442#0" expanded="true" />
-                <element signature="e#472#473#0" expanded="true" />
+                <element signature="e#360#361#0" expanded="true" />
+                <element signature="e#397#398#0" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
+                <element signature="e#474#475#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,11 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Factor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Factor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/Factor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+            <state relative-caret-position="60">
+              <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -189,6 +189,8 @@
         <option value="$PROJECT_DIR$/src/jsa70/lexer/src/CompoundFactor.java" />
         <option value="$PROJECT_DIR$/src/jsa70/lexer/src/DisjunctiveExpression.java" />
         <option value="$PROJECT_DIR$/src/jsa70/lexer/src/ConjuctiveRepresentation.java" />
+        <option value="$PROJECT_DIR$/src/jsa70/lexer/src/ConjunctiveRepresentation.java" />
+        <option value="$PROJECT_DIR$/src/jsa70/lexer/src/Factor.java" />
       </list>
     </option>
   </component>
@@ -886,14 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/Factor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/CompoundFactor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -939,16 +933,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/ConjuctiveRepresentation.java">
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/ConjunctiveRepresentation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="240">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jsa70/lexer/src/Factor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>

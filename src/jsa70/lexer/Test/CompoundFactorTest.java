@@ -3,50 +3,23 @@ package jsa70.lexer.Test;
 import jsa70.lexer.src.CompoundFactor;
 import jsa70.lexer.src.DisjunctiveLexer;
 import jsa70.lexer.src.ParserException;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class CompoundFactorTest
 {
-    String string1;
-    String string2;
-    String string3;
-    String string4;
-    String string5;
-    String string6;
-    DisjunctiveLexer lex1;
-    DisjunctiveLexer lex2;
-    DisjunctiveLexer lex3;
-    DisjunctiveLexer lex4;
-    DisjunctiveLexer lex5;
-    DisjunctiveLexer lex6;
+    DisjunctiveLexer dLex;
 
-    @BeforeEach
-    void setUp()
-    {
-        string1 = "(one and (not two and three))";
-        string2 = "(one and )";
-        string3 = "five";
-        string4 = "(one and two)";
-        string5 = "(one and (two and three))";
-        string6 = "(one and not (two and three))";
-
-        lex1 = new DisjunctiveLexer(string1);
-        lex2 = new DisjunctiveLexer(string2);
-        lex3 = new DisjunctiveLexer(string3);
-        lex4 = new DisjunctiveLexer(string4);
-        lex5 = new DisjunctiveLexer(string5);
-        lex6 = new DisjunctiveLexer(string6);
-    }
 
     @Test
     void build_validInputs()
     {
+        dLex = new DisjunctiveLexer("(one and (not two and three))");
+
         try
         {
-            CompoundFactor compFactor = CompoundFactor.build(lex1.nextValid().get(), lex1);
+            CompoundFactor.build(dLex.nextValid().get(), dLex);
             assertTrue(true);
         }
         catch(ParserException e)
@@ -58,9 +31,11 @@ class CompoundFactorTest
     @Test
     void build_invalidInputs()
     {
+        dLex = new DisjunctiveLexer("(one and )");
+
         try
         {
-            CompoundFactor compFactor = CompoundFactor.build(lex2.nextValid().get(), lex2);
+            CompoundFactor.build(dLex.nextValid().get(), dLex);
             assertTrue(false);
         }
         catch(ParserException e)
@@ -72,10 +47,16 @@ class CompoundFactorTest
     @Test
     void conjunctiveRepresentation_validInputs_singleLayer()
     {
+        dLex = new DisjunctiveLexer("(one and two)");
+
         try
         {
-            CompoundFactor compFactor = CompoundFactor.build(lex4.nextValid().get(), lex4);
+            CompoundFactor compFactor = CompoundFactor.build(dLex.nextValid().get(), dLex);
             assertEquals(compFactor.conjunctiveRepresentation().getRepresentation(), "(not one or not two)");
+
+            dLex = new DisjunctiveLexer("(one and not two)");
+            compFactor = CompoundFactor.build(dLex.nextValid().get(), dLex);
+            assertEquals(compFactor.conjunctiveRepresentation().getRepresentation(), "(not one or two)");
         }
         catch (ParserException e)
         {
@@ -86,12 +67,15 @@ class CompoundFactorTest
     @Test
     void conjunctiveRepresentation_validInputs_nested()
     {
+        dLex = new DisjunctiveLexer("(one and (two and three))");
+
         try
         {
-            CompoundFactor compFactor = CompoundFactor.build(lex5.nextValid().get(), lex5);
+            CompoundFactor compFactor = CompoundFactor.build(dLex.nextValid().get(), dLex);
             assertEquals(compFactor.conjunctiveRepresentation().getRepresentation(), "(not one or (not two or not three))");
 
-            compFactor = CompoundFactor.build(lex6.nextValid().get(), lex6);
+            dLex = new DisjunctiveLexer("(one and not (two and three))");
+            compFactor = CompoundFactor.build(dLex.nextValid().get(), dLex);
             assertEquals(compFactor.conjunctiveRepresentation().getRepresentation(), "(not one or (two and three))");
         }
         catch (ParserException e)

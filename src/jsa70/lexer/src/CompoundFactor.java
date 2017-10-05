@@ -1,5 +1,7 @@
 package jsa70.lexer.src;
 
+import java.util.Optional;
+
 public class CompoundFactor implements Factor
 {
     private final DisjunctiveExpression LEFT_EXPRESSION;
@@ -17,17 +19,26 @@ public class CompoundFactor implements Factor
     {
         //OPEN
         ParserException.verify(Token.Type.OPEN, token);
+
         //ID or Expression
-        DisjunctiveExpression leftId = DisjunctiveExpression.build(lexer.nextValid().get(), lexer);
+        token = ParserException.verifyToken(lexer.nextValid());
+        DisjunctiveExpression leftId = DisjunctiveExpression.build(token, lexer);
+
         //AND
-        ParserException.verify(Token.Type.AND, lexer.nextValid().get());
+        token = ParserException.verifyToken(lexer.nextValid());
+        ParserException.verify(Token.Type.AND, token);
+
         //ID or Expression
-        DisjunctiveExpression rightId = DisjunctiveExpression.build(lexer.nextValid().get(), lexer);
+        token = ParserException.verifyToken(lexer.nextValid());
+        DisjunctiveExpression rightId = DisjunctiveExpression.build(token, lexer);
+
         //CLOSE
-        ParserException.verify(Token.Type.CLOSE, lexer.nextValid().get());
+        token = ParserException.verifyToken(lexer.nextValid());
+        ParserException.verify(Token.Type.CLOSE, token);
 
         return new CompoundFactor(leftId, rightId);
     }
+
 
     @Override
     public ConjunctiveRepresentation conjunctiveRepresentation()

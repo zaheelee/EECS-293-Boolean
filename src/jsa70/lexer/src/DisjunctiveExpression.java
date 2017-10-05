@@ -22,7 +22,7 @@ public final class DisjunctiveExpression
         if(first.getType().equals(Token.Type.NOT))
         {
             isPositive = false;
-            first = lexer.nextValid().get();
+            first = ParserException.verifyToken(lexer.nextValid());
         }
 
         if(first.getType().equals(Token.Type.ID))
@@ -38,19 +38,20 @@ public final class DisjunctiveExpression
         StringBuilder builder = new StringBuilder();
         ConjunctiveRepresentation conjunctiveRep = FACTOR.conjunctiveRepresentation();
 
-        if(conjunctiveRep.getNegation() && POSITIVE) // already in format
+        if(conjunctiveRep.getNegation() == POSITIVE) // already in format
         {
             builder.append(conjunctiveRep.getRepresentation());
         }
-        else if(conjunctiveRep.getNegation()) //POSITIVE == FALSE, already in format plus "not"
+        else if(conjunctiveRep.getNegation()) //already negated && not positive -> original
         {
             builder.append(FACTOR.toString());
         }
-        else //NEGATION == false, POSITIVE == false, not in format plus "not"
+        else //not negated yet && not positive
         {
             builder.append("not ");
             builder.append(conjunctiveRep.getRepresentation());
         }
+
 
         return builder.toString();
     }
@@ -63,10 +64,13 @@ public final class DisjunctiveExpression
     @Override
     public String toString()
     {
+
         if(POSITIVE)
         {
             return FACTOR.toString();
         }
         return "not " + FACTOR.toString();
+
+        //return FACTOR.toString();
     }
 }

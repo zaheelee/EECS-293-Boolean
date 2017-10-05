@@ -31,8 +31,6 @@ public class Lexer
         return MATCHER.find();
     }
 
-    // Apparently this is not supposed to increment, which is listed nowhere in the assignment,
-    // but that is what a TA said so I guess I'll do it.
     public LocationalToken next()
             throws ParserException
     {

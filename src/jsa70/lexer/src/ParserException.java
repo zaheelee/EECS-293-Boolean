@@ -53,6 +53,13 @@ public final class ParserException extends Exception
         }
     }
 
+    public static LocationalToken verifyToken(Optional<LocationalToken> optionalToken)
+            throws ParserException
+    {
+        ParserException.verify(optionalToken);
+        return optionalToken.get();
+    }
+
 
     public ErrorCode getErrorCode()
     {
